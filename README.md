@@ -2,4 +2,4 @@ This program takes a PDF file and converts it to Word format. Utilizing streamli
 
 A lot of file converters online are slow, have ads, or may even cost money. This program is quick and free to use for everyone. 
 
-Packages utilized: streamlit, PyPDF2, docx,  io
+Packages utilized: streamlit, PyPDF2, docx, io
