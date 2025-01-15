@@ -29,3 +29,16 @@ for page_num in range(len(pdf.pages)):
     text = page.extract_text() #extracted text
     doc.add_paragraph(text) #extracted text gets added to doc
 
+
+word_io =io.BytesIO()
+doc.save(word_io)
+
+word_io.seek(0)
+
+st.download_button(
+    label= "Download Converted File",
+    data= word_io,
+    file_name= "Converted.docx",
+    mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
+)
