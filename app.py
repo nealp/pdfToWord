@@ -7,6 +7,8 @@ pdf= None
 
 st.title('PDF to Word Converter')
 
+st.image(image="images/image.jpg", width=200)
+
 st.write("Upload your PDF here:")
 
 uploaded_file= st.file_uploader(" ", type = ["pdf"])
@@ -14,7 +16,7 @@ uploaded_file= st.file_uploader(" ", type = ["pdf"])
 #if there is a file uploaded:
 if uploaded_file is not None: 
     pdf = PdfReader(uploaded_file)
-    
+
 
     'PDF succesfully uploaded!'
 #pdf.pages gives a list of all pages
@@ -39,5 +41,5 @@ if uploaded_file is not None:
         data= word_io,
         file_name= "Converted.docx",
         mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-
+        
     )
