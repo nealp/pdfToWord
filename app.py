@@ -7,7 +7,8 @@ pdf= None
 
 st.title('PDF to Word Converter')
 
-st.image(image="images/image.jpg", width=200)
+
+st.image(image="images/image.jpg", width=215)
 
 st.write("Upload your PDF here:")
 
